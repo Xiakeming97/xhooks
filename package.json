@@ -6,7 +6,8 @@
     "start": "npm run dev",
     "dev": "dumi dev",
     "build": "dumi build",
-    "prepare": "husky install && dumi setup"
+    "prepare": "husky install && dumi setup",
+    "commit": "git add . && cz-customizable"
   },
   "authors": [
     "xiakeming97@gmail.com"
