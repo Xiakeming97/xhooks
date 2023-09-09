@@ -9,7 +9,9 @@
  * Copyright (c) 2023 by XIAKEMING, All Rights Reserved. 
  */
 import useWindowResize from './useWindowResize'
+import useBoolean from './useBoolean'
 
 export {
-  useWindowResize
+  useWindowResize,
+  useBoolean
 }

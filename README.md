@@ -1,18 +1,19 @@
 # xhooks
 
-A static site base on [dumi](https://d.umijs.org).
+一个高质量和可靠的 React Hooks 库
 
-## Development
+## 📦 安装
 
 ```bash
-# install dependencies
-$ npm install
+$ npm install --save xkm_xhooks
+# or
+$ yarn add xkm_xhooks
+```
 
-# start dev server
-$ npm start
+## 🔨 使用
 
-# build docs
-$ npm run build
+```jsx | pure
+import { useBoolean } from 'xkm_xhooks';
 ```
 
 ## LICENSE
