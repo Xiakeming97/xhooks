@@ -1,5 +1,5 @@
 {
-  "name": "xkm_hooks",
+  "name": "xkm_xhooks",
   "version": "0.0.1",
   "description": "一个高质量和可靠的 React Hooks 库。",
   "module": "dist/index.js",
@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/Xiakeming97/xhooks"
   },
+  "keywords": ["hooks","use-hooks","react-hooks"],
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",
