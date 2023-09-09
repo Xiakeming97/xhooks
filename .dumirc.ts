@@ -1,7 +1,8 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  outputPath: 'docs-dist',
   themeConfig: {
-    name: 'xhooks',
+    name: 'xkm_hooks',
   },
 });
