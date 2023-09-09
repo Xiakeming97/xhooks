@@ -3,6 +3,10 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
-    name: 'xkm_xhooks',
+    name: 'xhooks',
+    nav: [
+      { title: '指南', link: '/guide' },
+      { title: 'hooks', link: '/components' },
+    ],
   },
 });
