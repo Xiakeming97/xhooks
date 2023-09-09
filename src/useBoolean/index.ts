@@ -3,21 +3,25 @@ import React,{useState} from 'react'
 export interface Actions {
     setTrue: () => void;
     setFalse: () => void;
+    set: (value: boolean) => void;
     toggle: () => void;
   }
 
 function useBoolean(defaultValue = false):[boolean,Actions] {
     const [newboolean,setNewBoolean] = useState(defaultValue)
-    function setTrue(){
+    function setTrue():void{
         setNewBoolean(true)
     }
-    function setFalse(){
+    function setFalse():void{
         setNewBoolean(false)
     } 
-    function toggle(){
+    function set(v:boolean):void{
+      setNewBoolean(v)
+    }
+    function toggle():void{
         setNewBoolean(!newboolean)
     }
-  return [newboolean,{setTrue,setFalse,toggle}]
+  return [newboolean,{setTrue,setFalse,set,toggle}]
 }
 
 export default useBoolean

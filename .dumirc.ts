@@ -8,5 +8,13 @@ export default defineConfig({
       { title: '指南', link: '/guide' },
       { title: 'hooks', link: '/components' },
     ],
+    analytics: {
+      // 百度统计的 key
+      baidu: 'baidu_tongji_key',
+    },
+    footer: 'xhooks由xiakeming开发',
+    socialLinks: {
+      github: 'https://github.com/Xiakeming97/xhooks',
+    },
   },
 });

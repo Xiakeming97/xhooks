@@ -24,7 +24,8 @@
     "lint": "npm run lint:es",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
-    "commit": "git add . && cz-customizable"
+    "commit:add": "git add . && cz-customizable",
+    "commit":"cz-customizable"
   },
   "authors": [
     "xiakeming97@gmail.com"
