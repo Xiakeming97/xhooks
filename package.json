@@ -1,22 +1,58 @@
 {
-  "name": "xhooks",
+  "name": "xkm_xhooks",
   "version": "0.0.1",
-  "description": "A static site based on dumi",
+  "description": "一个高质量和可靠的 React Hooks 库。",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xiakeming97/xhooks"
+  },
+  "keywords": [
+    "hooks",
+    "use-hooks",
+    "react-hooks"
+  ],
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",
-    "build": "dumi build",
-    "prepare": "husky install && dumi setup",
-    "commit": "git add . && cz-customizable"
+    "build": "father build",
+    "build:watch": "father dev",
+    "docs:build": "dumi build",
+    "prepare": "husky install",
+    "doctor": "father doctor",
+    "lint": "npm run lint:es",
+    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
+    "prepublishOnly": "father doctor && npm run build",
+    "commit:add": "git add . && cz-customizable",
+    "commit":"cz-customizable"
   },
   "authors": [
     "xiakeming97@gmail.com"
   ],
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "lint-staged": {
     "*.{md,json}": [
       "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.7.0",
@@ -27,9 +63,15 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "dumi": "^2.2.0",
+    "eslint": "^8.23.0",
+    "father": "^4.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "config": {
     "commitizen": {

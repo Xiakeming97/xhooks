@@ -6,18 +6,34 @@ hero:
   actions:
     - text: 指南
       link: /guide
-    - text: hooks列表
-      link: /components/use-szie
+    - text: Hooks列表
+      link: /components/use-boolean
 features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
+  - title: 易学易用
+    emoji: 🧑‍💻
+    description: 通过npm或者yarn即可安装使用
+  - title: 功能完善
+    emoji: 📝
+    description: 包含丰富的基础 Hooks
+  - title: TypeScript
     emoji: 🚀
-    description: Put ! description here
+    description: 使用 TypeScript 构建，提供完整的类型定义文件
 ---
 
-xhooks
+## 📦 安装
+
+```bash
+$ npm install --save xkm_xhooks
+# or
+$ yarn add xkm_xhooks
+```
+
+## 🔨 使用
+
+```jsx | pure
+import { useBoolean } from 'xkm_xhooks';
+```
+
+## 💻 在线体验
+
+[![Edit demo for ahooks](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/xhookszai-xian-ti-yan-64m69h?file=/src/App.tsx:13,11)
