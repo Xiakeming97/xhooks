@@ -2,7 +2,7 @@
  * @Author: XiaKeMing xiakeming97@gmail.com
  * @Date: 2023-09-09 15:57:00
  * @LastEditors: XiaKeMing xiakeming97@gmail.com
- * @LastEditTime: 2023-09-10 18:42:36
+ * @LastEditTime: 2023-09-11 01:02:53
  * @FilePath: /xhooks/src/useBoolean/index.ts
  * @Description: 优雅的管理 boolean 状态的 Hook。
  * 
@@ -18,8 +18,8 @@ export interface Actions {
     toggle: () => void;
   }
 
-function useBoolean(defaultValue = false):[boolean,Actions] {
-    const [newboolean,setNewBoolean] = useState(defaultValue)
+function useBoolean(defaultValue:boolean = false):[boolean,Actions] {
+  const [newboolean, setNewBoolean] = useState<boolean>(!!defaultValue);
     function setTrue():void{
         setNewBoolean(true)
     }
@@ -27,7 +27,7 @@ function useBoolean(defaultValue = false):[boolean,Actions] {
         setNewBoolean(false)
     } 
     function set(v:boolean):void{
-      setNewBoolean(v)
+      setNewBoolean(!!v)
     }
     function toggle():void{
         setNewBoolean(!newboolean)
