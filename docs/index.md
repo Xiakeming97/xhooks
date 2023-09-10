@@ -6,8 +6,8 @@ hero:
   actions:
     - text: 指南
       link: /guide
-    - text: hooks列表
-      link: /components/use-szie
+    - text: Hooks列表
+      link: /components/use-boolean
 features:
   - title: 易学易用
     emoji: 🧑‍💻

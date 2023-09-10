@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "xhooks": ["src"],
-      "xhooks/*": ["src/*", "*"]
+      "xkm_xhooks": ["src"],
+      "xkm_xhooks/*": ["src/*", "*"]
     }
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
