@@ -1,6 +1,8 @@
 ---
-nav:
-  path: /hooks
+group:
+  title: State
+  order: 0
+title: useBoolean
 ---
 
 # useBoolean

@@ -4,9 +4,10 @@ export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
     name: 'xhooks',
+    logo:'/logo.png',
     nav: [
       { title: '指南', link: '/guide' },
-      { title: 'hooks', link: '/components' },
+      { title: 'Hooks', link: '/components/use-boolean' },
     ],
     analytics: {
       // 百度统计的 key
@@ -17,4 +18,7 @@ export default defineConfig({
       github: 'https://github.com/Xiakeming97/xhooks',
     },
   },
+  favicons: [
+    '/favicon.png'
+  ],
 });
