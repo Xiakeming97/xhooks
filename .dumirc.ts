@@ -21,4 +21,6 @@ export default defineConfig({
   favicons: [
     '/favicon.png'
   ],
+  base: '/xhooks/',
+  publicPath: '/xhooks/',
 });
