@@ -25,7 +25,8 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
     "commit:add": "git add . && cz-customizable",
-    "commit":"cz-customizable"
+    "commit": "cz-customizable",
+    "deploy": "gh-pages -d docs-dist"
   },
   "authors": [
     "xiakeming97@gmail.com"
@@ -56,6 +57,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.7.0",
+    "@esbuild/win32-x64": "^0.19.2",
     "commitizen": "^4.3.0",
     "commitlint": "^17.7.1",
     "commitlint-config-cz": "^0.13.3",
@@ -63,8 +65,9 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "dumi": "^2.2.0",
-    "eslint": "^8.23.0",
+    "eslint": "^8.49.0",
     "father": "^4.1.0",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
