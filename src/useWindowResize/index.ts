@@ -2,7 +2,7 @@
  * @Author: XiaKeMing xiakeming97@gmail.com
  * @Date: 2023-08-07 01:26:27
  * @LastEditors: XiaKeMing xiakeming97@gmail.com
- * @LastEditTime: 2023-08-18 16:29:29
+ * @LastEditTime: 2023-09-10 19:04:54
  * @FilePath: /xhooks/src/useWindowResize/index.ts
  * @Description: 获取窗口大小
  * 
@@ -10,7 +10,7 @@
  */
 import { useState, useEffect } from 'react';
 
-interface WindowSize {
+export interface WindowSize {
   width: number;
   height: number;
 }

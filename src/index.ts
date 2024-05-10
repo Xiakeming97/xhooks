@@ -2,16 +2,14 @@
  * @Author: XiaKeMing xiakeming97@gmail.com
  * @Date: 2023-08-07 00:21:43
  * @LastEditors: XiaKeMing xiakeming97@gmail.com
- * @LastEditTime: 2023-08-18 19:43:07
+ * @LastEditTime: 2024-05-10 11:51:21
  * @FilePath: /xhooks/src/index.ts
  * @Description: xhooks项目入口文件
- * 
- * Copyright (c) 2023 by XIAKEMING, All Rights Reserved. 
+ *
+ * Copyright (c) 2023 by XIAKEMING, All Rights Reserved.
  */
-import useWindowResize from './useWindowResize'
-import useBoolean from './useBoolean'
+import useBoolean from './useBoolean';
+import useUpdateEffect from './useUpdateEffect';
+import useWindowResize from './useWindowResize';
 
-export {
-  useWindowResize,
-  useBoolean
-}
+export { useBoolean, useUpdateEffect, useWindowResize };
