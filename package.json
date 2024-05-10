@@ -25,7 +25,7 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
     "commit:add": "git add . && cz-customizable",
-    "commit":  "cz-customizable",
+    "commit": "cz-customizable",
     "test": "jest",
     "deploy": "gh-pages -d docs-dist"
   },
