@@ -2,7 +2,7 @@
  * @Author: XiaKeMing xiakeming97@gmail.com
  * @Date: 2024-05-10 11:57:54
  * @LastEditors: XiaKeMing xiakeming97@gmail.com
- * @LastEditTime: 2024-05-10 13:47:15
+ * @LastEditTime: 2024-05-10 17:09:58
  * @FilePath: /xhooks/src/createUpdateEffect/index.ts
  * @Description: createUpdateEffect
  * 
@@ -18,7 +18,7 @@ function createUpdateEffect(hook:EffectHookType){
     effect: React.EffectCallback,
     deps?: React.DependencyList,
   ): void => {
-    const isInitialMount = useRef(true);
+    const isInitialMount = useRef<boolean>(true);
 
     hook(() => {
       return () => {
