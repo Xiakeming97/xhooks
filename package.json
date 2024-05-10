@@ -25,8 +25,9 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
     "commit:add": "git add . && cz-customizable",
-    "commit": "cz-customizable",
-    "test": "jest"
+    "commit":  "cz-customizable",
+    "test": "jest",
+    "deploy": "gh-pages -d docs-dist"
   },
   "authors": [
     "xiakeming97@gmail.com"
@@ -71,8 +72,9 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "dumi": "^2.2.0",
-    "eslint": "^8.23.0",
+    "eslint": "^8.49.0",
     "father": "^4.1.0",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
