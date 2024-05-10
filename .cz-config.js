@@ -26,11 +26,11 @@ module.exports = {
     },
     {
       value: ":recycle: refactor",
-      name: "♻️  refactor: 重构",
+      name: "♻️ refactor: 重构",
     },
     {
       value: ":pencil2: docs",
-      name: "✏️  docs:     文档变更",
+      name: "✏️ docs:     文档变更",
     },
     {
       value: ":white_check_mark: test",
